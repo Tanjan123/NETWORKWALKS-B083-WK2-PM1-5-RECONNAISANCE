@@ -413,23 +413,27 @@ This produced:
 
 Two email addresses were returned:
 
-- abc@microsoft.com
-- postmaster@microsoft.com
+`abc@microsoft.com
+postmaster@microsoft.com`
+
+
 
 **Hosts**
 
 Ten hosts were returned, including:
 
-- 2Fsupport.microsoft.com
-- account.microsoft.com
-- developer.microsoft.com
-- enablement.microsoft.com
-- learn.microsoft.com
-- opensource.microsoft.com
-- prod.support.services.microsoft.com
-- service.microsoft.com
-- support.microsoft.com
-- support.serviceshub.microsoft.com
+`
+2Fsupport.microsoft.com
+account.microsoft.com
+developer.microsoft.com
+enablement.microsoft.com
+learn.microsoft.com
+opensource.microsoft.com
+prod.support.services.microsoft.com
+service.microsoft.com
+support.microsoft.com
+support.serviceshub.microsoft.com`
+
 
 #### 5.4.3 THEHARVESTER USING ALL SOURCES
 
@@ -466,9 +470,10 @@ The scan reported:
 
 The three email addresses reported by the completed scan were:
 
-- dotnet-docker-bot@microsoft.com
-- opencode@microsoft.com
-- secure@microsoft.com
+`
+dotnet-docker-bot@microsoft.com
+opencode@microsoft.com
+secure@microsoft.com`
 
 The tool also reported 14 subdomains through a DNS fallback mechanism.
 
@@ -569,6 +574,8 @@ The final Zenmap task required displaying and saving the discovered network topo
 ![Network Topology Evidence](images/19.png)
 
 The topology output should be retained as assessment evidence together with the corresponding Zenmap scan results.
+
+Output graph result : ![Network Topology Evidence](images/zenmap-full-host-list.pdf)
 
 ## 6. CONSOLIDATED FINDINGS AND RISK ANALYSIS
 
