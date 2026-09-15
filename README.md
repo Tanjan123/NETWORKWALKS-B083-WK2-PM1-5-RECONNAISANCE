@@ -91,7 +91,7 @@ The purpose was to understand how different tools provide different pieces of in
 
 **Command Used:** `whois networkwalks.com`
 
-![WHOIS Evidence 1](images/1.jpg)
+![WHOIS Evidence 1](images/1.png)
 
 ![WHOIS Evidence 2](images/2.png)
 
