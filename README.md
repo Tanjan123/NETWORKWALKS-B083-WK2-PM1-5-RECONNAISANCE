@@ -91,9 +91,9 @@ The purpose was to understand how different tools provide different pieces of in
 
 **Command Used:** `whois networkwalks.com`
 
-![WHOIS Evidence 1](../evidence/01-whois/clip_image002.jpg)
+![WHOIS Evidence 1](../images/1.jpg)
 
-![WHOIS Evidence 2](../evidence/01-whois/clip_image004.png)
+![WHOIS Evidence 2](../images/2.png)
 
 The WHOIS query returned domain registration information for networkwalks.com. The observed information included:
 
