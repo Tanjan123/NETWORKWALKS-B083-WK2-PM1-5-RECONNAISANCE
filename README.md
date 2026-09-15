@@ -1,8 +1,27 @@
-# PENETRATION TESTING REPORT
+<h1 align="center">🔐 Networkwalks Cybersecurity — Penetration Testing Report</h1>
 
-## FOOTPRINTING, RECONNAISSANCE & NETWORK SCANNING PHASES
+<div align="center">
+
+**Footprinting, Reconnaissance & Network Scanning — Week 2 Final Assessment**
 
 **W2-PM-FINAL | CYBERSECURITY | NETWORKWALKS**
+
+</div>
+
+<p align="center">
+
+<img src="https://img.shields.io/badge/Program-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
+<img src="https://img.shields.io/badge/Batch-B082-0070C0?style=flat-square&labelColor=000000" />
+<img src="https://img.shields.io/badge/Week-2%20Final-238F89?style=flat-square&labelColor=000000" />
+<img src="https://img.shields.io/badge/Kali%20Linux-Reconnaissance-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
+<img src="https://img.shields.io/badge/GHDB-Google%20Dorking-404040?style=flat-square&labelColor=C00000" />
+<img src="https://img.shields.io/badge/Maltego-Reconnaissance-0070C0?style=flat-square&labelColor=000000" />
+<img src="https://img.shields.io/badge/theHarvester-OSINT-238F89?style=flat-square&labelColor=000000" />
+<img src="https://img.shields.io/badge/Zenmap-Network%20Scanning-C00000?style=flat-square&labelColor=000000" />
+<img src="https://img.shields.io/badge/Nmap-Host%20Discovery-404040?style=flat-square&labelColor=0070C0" />
+<img src="https://img.shields.io/badge/Ethical%20Hacking-Authorized%20Testing-C00000?style=flat-square&labelColor=000000" />
+
+</p>
 
 ## PENTESTER INFORMATION
 
