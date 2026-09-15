@@ -794,3 +794,47 @@ Overall, these exercises demonstrated that reconnaissance is a fundamental stage
 The activities also reinforced an important professional principle: **a reconnaissance finding is not automatically a vulnerability**. Technology versions, IP addresses, DNS records, exposed headers, indexed resources, and unidentified hosts must be properly validated within an authorized scope before determining whether they represent an actual security weakness.
 
 Finally, the exercises strengthened my understanding of structured penetration-testing methodology and security reporting. A professional assessment should clearly document the scope, tools, commands, observations, evidence, potential impact, risk level, and recommendations while maintaining strict authorization boundaries throughout the testing process.
+
+
+---
+
+<h2 align="center">👤 Author</h2>
+
+<div align="center">
+
+**Tanjan Singh Karki**
+
+Cybersecurity Trainee | B083 
+Networkwalks Cybersecurity Program  
+
+[LinkedIn](https://www.linkedin.com/in/tanjan-karki-cybersecurity/)
+
+</div>
+
+---
+
+<h2 align="center">📌 Project Information</h2>
+
+<div align="center">
+
+| **Field** | **Details** |
+|---|---|
+| **Program Name** | Cybersecurity Program at Networkwalks |
+| **Week** | 02 |
+| **Modules Completed** | W2-PM1 \| W2-PM2 \| W2-PM3 \| W2-PM4 \| W2-PM5 |
+| **Repository** | GitHub |
+| **Project Area** | Footprinting, Reconnaissance, GHDB, OSINT & Network Scanning |
+
+</div>
+
+---
+
+<h2 align="center">- End -</h2>
+
+<div align="center">
+
+**Networkwalks Cybersecurity Program — Batch B083**
+
+**Week 2 Final Penetration Testing Report**
+
+</div>
