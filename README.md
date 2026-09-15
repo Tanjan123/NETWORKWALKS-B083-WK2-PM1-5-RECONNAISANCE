@@ -141,7 +141,7 @@ In this case, the use of registration privacy reduces the amount of directly ide
 
 **Command Used:** `whatweb networkwalks.com`
 
-![WhatWeb Evidence](../evidence/02-whatweb/clip_image006.png)
+![WhatWeb Evidence](images/3.png)
 
 WhatWeb identified several technologies and characteristics associated with the website. The HTTPS result identified:
 
@@ -173,7 +173,7 @@ However, identifying WordPress or a plugin does **not itself prove that the inst
 
 **Command Used:** `nslookup networkwalks.com`
 
-![Nslookup Evidence](../evidence/03-nslookup/clip_image008.png)
+![Nslookup Evidence](images/4.png)
 
 The DNS query was performed using Google's DNS resolver:
 
@@ -202,7 +202,7 @@ The IP address itself is not a vulnerability.
 
 **Command Used:** `curl -I https://networkwalks.com`
 
-![cURL Evidence](../evidence/04-curl/clip_image010.png)
+![cURL Evidence](images/5.png)
 
 The server returned: HTTP/2 200
 
@@ -232,7 +232,7 @@ The WordPress REST API reference is expected behavior for many WordPress install
 
 **Command Used:** `wafw00f networkwalks.com`
 
-![Wafw00f Evidence](../evidence/05-wafw00f/clip_image012.png)
+![Wafw00f Evidence](images/6.png)
 
 Wafw00f identified: The site https://networkwalks.com is behind ModSecurity (SpiderLabs) WAF. The tool completed the detection using two requests.
 
@@ -250,7 +250,7 @@ The presence of ModSecurity should therefore be considered a **security control*
 
 **Command Used:** `dnsrecon -d networkwalks.com`
 
-![DNSRecon Evidence](../evidence/06-dnsrecon/clip_image014.png)
+![DNSRecon Evidence](images/7.png)
 
 DNSRecon returned several types of DNS information.
 
@@ -318,11 +318,11 @@ The second practical module introduced Google Hacking Database techniques for di
 | 1 | https://tuwebcam.towson.edu/index.html | `intitle:"Webcam" inurl:WebCam.htm` | Not provided |
 | 2 | http://189.1.167.124:4321/ | `intitle:"Webcam" inurl:WebCam.htm` | Not provided |
 | 3 | https://www.skylinewebcams.com/en/webcam/italia/lazio/roma/campo-de-fiori.html | `inurl:webcam site:skylinewebcams.com inurl:roma` | Not provided |
-| 4 | http://109.233.191.130:8080/ | Not specified in provided data | Not provided |
+| 4 | http://109.233.191.130:8080/ | `intitle:"webcamXP" inurl:8080` | Not provided |
 | 5 | http://109.206.96.75:8080/multi.html | `intitle:"webcamXP" inurl:8080` | Not provided |
 | 6 | http://68.115.218.130:32479/multi.html | `inurl:/multi.html intitle:webcam` | Not provided |
-| 7 | http://webcam.turboprop.com/ | Not specified in provided data | Not provided |
-| 8 | http://ldeo-phenocam-stardot.ldeo.columbia.edu/ | Not specified in provided data | Not provided |
+| 7 | http://webcam.turboprop.com/ | `intitle:"NetCamSC*"` | Not provided |
+| 8 | http://ldeo-phenocam-stardot.ldeo.columbia.edu/ | `intitle:"NetCamSC*"` | Not provided |
 | 9 | http://50.184.100.114:8000/ | `intitle:"NetCamSC*"` | Not provided |
 | 10 | http://www.insecam.org/en/view/508606/ | `inurl:"view.shtml" "camera"` | Not provided |
 
@@ -369,17 +369,17 @@ The third practical module focused on Maltego.
 
 Maltego was installed on a Windows computer as required by the practical. The next task was to identify email addresses associated with networkwalks.com within the authorized training scope.
 
-![Maltego Evidence 1](../evidence/08-maltego/clip_image016.png)
+![Maltego Evidence 1](images/8.png)
 
-![Maltego Evidence 2](../evidence/08-maltego/clip_image018.png)
+![Maltego Evidence 2](images/9.png)
 
 Maltego provides a graphical approach to reconnaissance by representing relationships between domains, people, organizations, infrastructure, email addresses, and other entities.
 
-![Maltego Evidence 3](../evidence/08-maltego/clip_image020.png)
+![Maltego Evidence 3](images/10.png)
 
-![Maltego Evidence 4](../evidence/08-maltego/clip_image021.png)
+![Maltego Evidence 4](images/11.png)
 
-![Maltego Evidence 5](../evidence/08-maltego/clip_image023.png)
+![Maltego Evidence 5](images/12.png)
 
 **Security Relevance**
 
@@ -395,7 +395,7 @@ The fourth module focused on using theHarvester to collect publicly available in
 
 **Command Used:** `theHarvester -d microsoft.com -l 1000 -b Baidu`
 
-![theHarvester Baidu 1000](../evidence/09-theharvester/clip_image025.png)
+![theHarvester Baidu 1000](images/13.png)
 
 The result returned: No IPs found. No emails found. No people found. No hosts found.
 
@@ -405,7 +405,7 @@ Therefore, no useful results were obtained with the specified limit of 1000.
 
 The search was repeated using: `theHarvester -d microsoft.com -l 2000 -b Baidu`
 
-![theHarvester Baidu 2000](../evidence/09-theharvester/clip_image027.png)
+![theHarvester Baidu 2000](images/14.png)
 
 This produced:
 
@@ -435,7 +435,7 @@ Ten hosts were returned, including:
 
 **Command Used:** `theHarvester -d microsoft.com -l 50 -b all`
 
-![theHarvester All Sources](../evidence/09-theharvester/clip_image029.png)
+![theHarvester All Sources](images/15.png)
 
 The all-source scan demonstrated an important limitation of automated reconnaissance tools: many sources require API credentials. The output showed missing or invalid API keys for several services, including sources associated with:
 
@@ -496,9 +496,9 @@ The fifth module focused on network scanning and host discovery using Zenmap. Th
 
 Zenmap/Nmap was installed on the Windows PC using the official Nmap distribution as required by the practical.
 
-![Zenmap Installation Evidence 1](../evidence/10-zenmap/clip_image031.png)
+![Zenmap Installation Evidence 1](images/16.png)
 
-![Zenmap Installation Evidence 2](../evidence/10-zenmap/clip_image033.png)
+![Zenmap Installation Evidence 2](images/17.png)
 
 The practical installation source was:
 
@@ -529,7 +529,7 @@ The Nmap scan identified **10 live hosts** on the local network. The scan comple
 Nmap done: 256 IP addresses (10 hosts up) scanned in 4.07 seconds
 ```
 
-![Zenmap Host Discovery Evidence](../evidence/10-zenmap/clip_image035.png)
+![Zenmap Host Discovery Evidence](images/18.png)
 
 The discovered hosts were:
 
@@ -566,7 +566,7 @@ The presence of an unknown MAC-vendor result does **not** automatically indicate
 
 The final Zenmap task required displaying and saving the discovered network topology in PDF format. The topology provides a visual representation of the discovered network environment and assists in understanding relationships between the scanning system and detected hosts.
 
-![Network Topology Evidence](../evidence/10-zenmap/clip_image037.png)
+![Network Topology Evidence](images/19.png)
 
 The topology output should be retained as assessment evidence together with the corresponding Zenmap scan results.
 
